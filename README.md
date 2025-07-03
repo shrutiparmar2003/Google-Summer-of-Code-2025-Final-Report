@@ -21,13 +21,51 @@ To improve user experience during file export — particularly for large models 
 - Provided users with the ability to cancel long-running exports, especially helpful when dealing with large or complex 3D models.
 - Ensured that cancellation does not leave behind partial or corrupted files by handling cleanup properly.
 
+<img src="https://github.com/user-attachments/assets/d749b0d3-0116-43ff-92d6-82260d9460f3" width="500"/>
+
+
+
+
+---  
+
 ### Feature 2: Simulated Progress for VTK-Based Writers
 VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter) do not provide native support for progress updates. To work around this, I implemented a simulated progress mechanism that estimates export progress based on the number of points and a configurable update interval.
 
 While this doesn’t reflect real-time write status, it gives users a sense of motion and prevents the UI from freezing.
 
+---  
+
 ### Feature 3: Real-Time Progress Tracking for .rib and .iv Formats
 - For custom formats like RenderMan Interface Bytestream (.rib) and Inventor (.iv) — which don’t use VTK writers — I implemented manual point-by-point writing. This allowed full control over progress tracking and user interruption.
 
 - Progress is updated every few points, and cancellation immediately halts the process, cleaning up resources and avoiding half-written files.
+  
+---  
+
+### Feature 4: Support for New Export Formats: .rib and .iv
+I added export support for two previously unsupported formats:
+- .rib — widely used in photorealistic rendering pipelines (e.g., Pixar’s RenderMan).
+- .iv — used in Open Inventor scenes for visualization and CAD applications.
+
+Since these formats require specific structure and syntax, I wrote dedicated logic for formatting coordinates and headers correctly, ensuring compatibility with standard viewers.
+
+---  
+
+### Feature 5: Better Feedback and Error Handling
+The system's feedback mechanisms were enhanced to include:
+- Clear error messages for permission errors, empty surfaces, or unsupported formats.
+- Informative success messages after a successful export.
+- Silent fallback to print() in case the GUI is not available (e.g., in headless setups).
+
+Temporary files are also cleaned up automatically, and memory is freed where possible (via gc.collect()), avoiding clutter or leaks.
+
+---  
+
+### Feature 6: Unified and Refactored Export Workflow
+Previously, the export logic for each format was scattered and hard to extend. The _export_surface() method was refactored to:
+
+- Group common tasks like polydata preparation and normal orientation.
+- Handle all formats (standard and custom) through a shared, clean control flow.
+- Centralize progress updates and cancellation checks.
+
 
