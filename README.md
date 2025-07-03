@@ -21,7 +21,8 @@ To improve user experience during file export — particularly for large models 
 - Provided users with the ability to cancel long-running exports, especially helpful when dealing with large or complex 3D models.
 - Ensured that cancellation does not leave behind partial or corrupted files by handling cleanup properly.
 
-<img src="https://github.com/user-attachments/assets/d749b0d3-0116-43ff-92d6-82260d9460f3" width="500"/>
+<img src="https://github.com/user-attachments/assets/1d0deedb-58dc-4ead-ba5f-9eab0fae05ef" width="900" height="500"/>
+
 
 
 
