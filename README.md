@@ -56,6 +56,9 @@ I added export support for two previously unsupported formats:
 - .iv — used in Open Inventor scenes for visualization and CAD applications.
 
 Since these formats require specific structure and syntax, I wrote dedicated logic for formatting coordinates and headers correctly, ensuring compatibility with standard viewers.
+![image](https://github.com/user-attachments/assets/c8949e0c-fdf7-435e-a8be-709a921f25b0)
+
+
 
 ---  
 
