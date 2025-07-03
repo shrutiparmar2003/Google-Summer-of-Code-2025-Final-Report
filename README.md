@@ -26,4 +26,8 @@ VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter
 
 While this doesn’t reflect real-time write status, it gives users a sense of motion and prevents the UI from freezing.
 
+### Feature 3: Real-Time Progress Tracking for .rib and .iv Formats
+- For custom formats like RenderMan Interface Bytestream (.rib) and Inventor (.iv) — which don’t use VTK writers — I implemented manual point-by-point writing. This allowed full control over progress tracking and user interruption.
+
+- Progress is updated every few points, and cancellation immediately halts the process, cleaning up resources and avoiding half-written files.
 
