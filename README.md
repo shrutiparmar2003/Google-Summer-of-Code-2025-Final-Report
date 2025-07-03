@@ -33,6 +33,10 @@ VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter
 
 While this doesn’t reflect real-time write status, it gives users a sense of motion and prevents the UI from freezing.
 
+![image](https://github.com/user-attachments/assets/64361cf4-8085-475b-9ae7-5856d32fe0ee)
+
+
+
 ---  
 
 ### Feature 3: Real-Time Progress Tracking for .rib and .iv Formats
