@@ -13,3 +13,17 @@ This project aimed to enhance the 3D surface export workflow in InVesalius, an o
 
 ## Motivation
 Before this work, InVesalius lacked user feedback and control during the 3D surface export process. Large exports appeared unresponsive, and users had no way to monitor progress or cancel the operation. This project was motivated by the need to improve usability, transparency, and reliability during surface exports.
+
+## Features Implemented
+### Feature 1: Cancellable Progress Dialog
+To improve user experience during file export — particularly for large models — I integrated wx.ProgressDialog into the export process. The dialog visually communicates the progress of each stage (coordinate transformation, writing, etc.) and provides users the ability to cancel the operation at any point.
+- Integrated a wx.ProgressDialog during surface export to show real-time status updates.
+- Provided users with the ability to cancel long-running exports, especially helpful when dealing with large or complex 3D models.
+- Ensured that cancellation does not leave behind partial or corrupted files by handling cleanup properly.
+
+### Feature 2: Simulated Progress for VTK-Based Writers
+VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter) do not provide native support for progress updates. To work around this, I implemented a simulated progress mechanism that estimates export progress based on the number of points and a configurable update interval.
+
+While this doesn’t reflect real-time write status, it gives users a sense of motion and prevents the UI from freezing.
+
+
