@@ -1,1 +1,1 @@
-# GSoC-2025-Documentation-InVesalius
+# Google Summer of Code 2025 - Final Report
