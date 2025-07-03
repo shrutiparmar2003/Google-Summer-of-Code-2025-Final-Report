@@ -44,6 +44,10 @@ While this doesn’t reflect real-time write status, it gives users a sense of m
 
 - Progress is updated every few points, and cancellation immediately halts the process, cleaning up resources and avoiding half-written files.
   
+![image](https://github.com/user-attachments/assets/20ebf11b-3a9c-475b-bfe7-9307393e9a9f)
+
+
+  
 ---  
 
 ### Feature 4: Support for New Export Formats: .rib and .iv
