@@ -5,6 +5,7 @@
 - Project : Improvements in user response (Exporting 3D Surfaces)
 - Mentors : Paulo Henrique Junqueira Amorim, Thiago F Moraes
 - Project Branch : [GSoC_2025_Shruti_Parmar](https://github.com/shrutiparmar2003/Improvements-in-user-response-loading-and-saving-files-/tree/feature/issue-991-progress-bar)
+- Pull Request : [#994](https://github.com/invesalius/invesalius3/pull/994) (Related issue- #991)
 ## Introduction
 This project was developed as part of Google Summer of Code 2025 with the InVesalius organization. The goal was to enhance the 3D surface export functionality in the application by introducing a cancellable progress dialog, improving user feedback, and adding support for additional file formats. These changes aimed to provide users with better control, transparency, and reliability during long export operations.
 
