@@ -104,8 +104,11 @@ Previously, the export logic for each format was scattered and hard to extend. T
 
 ## Acknowledgements
 
-I sincerely thank my mentor **Paulo Henrique Junqueira Amorim** for his continuous guidance, support, and valuable feedback throughout the project. His guidance played a vital role in shaping my GSoC journey.
-I also extend my gratitude to **Renan Matsuda**, **Thiago F Moraes** and the entire **InVesalius** community for being part of this journey and facilitating a smooth and supportive GSoC experience.
+I sincerely thank my mentor **Paulo Amorim** for his continuous guidance, support, and valuable feedback throughout the project. His guidance played a vital role in shaping my GSoC journey.
+I also extend my gratitude to **Renan Matsuda**, **Thiago F Moraes** and the entire [**InVesalius**](https://github.com/invesalius) community for being part of this journey and facilitating a smooth and supportive GSoC experience.
+
+Contributing to an open-source medical imaging project as part of Google Summer of Code 2025 has been a transformative experience for me. I gained practical experience with large codebases, learned how to write robust and user-friendly features, and developed a deeper appreciation for open-source development and collaboration.
+
 Special thanks to **Google Summer of Code** for providing this incredible opportunity to contribute to open source and grow as a developer.
 
 
