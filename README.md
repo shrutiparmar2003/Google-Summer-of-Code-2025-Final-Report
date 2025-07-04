@@ -83,4 +83,11 @@ Previously, the export logic for each format was scattered and hard to extend. T
 - Handle all formats (standard and custom) through a shared, clean control flow.
 - Centralize progress updates and cancellation checks.
 
+## Export Workflow
+<p align="center">
+  <img src="https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/images/Export%20Workflow.png?raw=true" width="500" />
+</p>
+
+
+
 
