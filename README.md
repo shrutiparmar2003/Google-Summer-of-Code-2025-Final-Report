@@ -32,7 +32,7 @@ To improve user experience during file export — particularly for large models 
 ### Feature 2: Simulated Progress for VTK-Based Writers
 VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter) do not provide native support for progress updates. To work around this, I implemented a simulated progress mechanism that estimates export progress based on the number of points and a configurable update interval.
 
-While this doesn’t reflect real-time write status, it gives users a sense of motion and prevents the UI from freezing.
+These updates don’t track the actual write process, but by estimating progress based on the number of points, they help give users a sense that the export is moving forward. This makes the application feel responsive, even during longer operations.
 
 ![image](https://github.com/user-attachments/assets/64361cf4-8085-475b-9ae7-5856d32fe0ee)
 
