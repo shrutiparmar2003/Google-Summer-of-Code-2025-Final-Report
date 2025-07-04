@@ -92,6 +92,8 @@ Previously, the export logic for each format was scattered and hard to extend. T
 👉 [Community Bonding Period](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Community%20Bonding%20Period.md) 
 
 👉 [Week 1](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%201.md)
+
+---
 ## Challenges Faced
 
 - **Maintaining Existing Functionality**  
@@ -109,7 +111,7 @@ Previously, the export logic for each format was scattered and hard to extend. T
 ## Acknowledgements
 
 I sincerely thank my mentor **Paulo Amorim** for his continuous guidance, support, and valuable feedback throughout the project. His guidance played a vital role in shaping my GSoC journey.
-I also extend my gratitude to **Renan Matsuda**, **Thiago F Moraes** and the entire [**InVesalius**](https://github.com/invesalius) community for being part of this journey and facilitating a smooth and supportive GSoC experience.
+I also extend my gratitude to the organization admin **Renan Matsuda**, mentor **Thiago F Moraes** and the entire [**InVesalius**](https://github.com/invesalius) community for being part of this journey and facilitating a smooth and supportive GSoC experience.
 
 Contributing to an open-source medical imaging project as part of Google Summer of Code 2025 has been a transformative experience for me. I gained practical experience with large codebases, learned how to write robust and user-friendly features, and developed a deeper appreciation for open-source development and collaboration.
 
