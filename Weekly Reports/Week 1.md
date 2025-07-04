@@ -1,7 +1,7 @@
 ## Week 1
 The coding period began on 2nd June 2025. Since now the project’s scope was shifted to adding progress bars during 3D surface exports , I started exploring the relevant files and functions responsible for surface export functionality. I found that the logic was handled in the file “surface.py”.
 
-Now that the correct file wasidentified , the main challenge lied in locating the correct method where the code could be refactored to add the progress bar.
+Now that the correct file was identified , the main challenge lied in locating the correct method where the code could be refactored to add the progress bar.
 This step was crucial and needed caution so that no existing functionality of the codebase was broken.
 
 After spending time analyzing this file, I concluded that there were two functions/methods where refactoring could possibly generate the results.These were OnSurfaceExport method and _export_surface method. On carefully observing the _export_surface method, I realized that although the invesalius codebase allowed surface export for 9 types of file formats — .stl, .ply, .stl(ASCII), .rib, .iv, .obj, .x3D, .vtp and .vrml , the actual surface export logic was only implemented for the files — .stl, .stl(ASCII), .ply and .vtp. 
