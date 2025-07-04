@@ -8,6 +8,8 @@
 ## Introduction
 This project was developed as part of Google Summer of Code 2025 with the InVesalius organization. The goal was to enhance the 3D surface export functionality in the application by introducing a cancellable progress dialog, improving user feedback, and adding support for additional file formats. These changes aimed to provide users with better control, transparency, and reliability during long export operations.
 
+InVesalius supports exporting 3D surface data in formats such as .stl, .vtp, .ply, .obj, .x3d, .wrl, .rib, and .iv. While .rib and .iv were listed, they lacked actual export logic — this project added full support for these formats, along with real-time progress tracking and cancellation.
+
 ## Project Goal
 This project aimed to enhance the 3D surface export workflow in InVesalius, an open-source medical imaging platform, by improving usability and responsiveness. The main objective was to introduce a cancellable progress dialog that offered real-time feedback during export operations—particularly valuable for users working with large or complex datasets. Additionally, support for two new export formats, .iv (Inventor) and .rib (RenderMan), was implemented using custom logic. The export pipeline was also strengthened through better error handling, cleanup mechanisms, and a more consistent user interface, resulting in a smoother and more reliable export experience.
 
