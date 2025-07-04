@@ -1,4 +1,6 @@
 ## Week 1
+<img src="https://github.com/user-attachments/assets/7b588381-c37c-49d8-beaf-fc21d4da9caf" width="700">
+
 The coding period began on 2nd June 2025. Since now the project’s scope was shifted to adding progress bars during 3D surface exports , I started exploring the relevant files and functions responsible for surface export functionality. I found that the logic was handled in the file “surface.py”.
 
 Now that the correct file was identified , the main challenge lied in locating the correct method where the code could be refactored to add the progress bar.
