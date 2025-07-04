@@ -88,6 +88,9 @@ Previously, the export logic for each format was scattered and hard to extend. T
   <img src="https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/images/Export%20Workflow.png?raw=true" width="500" />
 </p>
 
+## Weekly Reports
+👉 [Community Bonding Period](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Community%20Bonding%20Period.md)
+
 ## Challenges Faced
 
 - **Maintaining Existing Functionality**  
