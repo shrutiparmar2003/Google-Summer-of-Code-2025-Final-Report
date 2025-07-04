@@ -89,8 +89,9 @@ Previously, the export logic for each format was scattered and hard to extend. T
 </p>
 
 ## Weekly Reports
-👉 [Community Bonding Period](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Community%20Bonding%20Period.md)
+👉 [Community Bonding Period](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Community%20Bonding%20Period.md) 
 
+👉 [Week 1](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%201.md)
 ## Challenges Faced
 
 - **Maintaining Existing Functionality**  
