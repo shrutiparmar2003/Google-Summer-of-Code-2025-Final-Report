@@ -88,6 +88,27 @@ Previously, the export logic for each format was scattered and hard to extend. T
   <img src="https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/images/Export%20Workflow.png?raw=true" width="500" />
 </p>
 
+## Challenges Faced
+
+- **Maintaining Existing Functionality**  
+  While adding progress dialogs, I had to ensure that no existing export formats broke or behaved unexpectedly.
+
+- **Simulating Progress for VTK Writers**  
+  VTK does not support native progress tracking, so I implemented a simulation using loop-based updates over surface points.
+
+- **Handling Export Cancellation**  
+  Initially, files were still being saved even after cancellation. I added checks and cleanup logic to prevent incomplete exports.
+
+- **Auto-Closing Progress Dialog**  
+  Ensured the progress dialog closed automatically after success or cancellation, improving overall user experience.
+
+## Acknowledgements
+
+I sincerely thank my mentor **Paulo Henrique Junqueira Amorim** for his continuous guidance, support, and valuable feedback throughout the project. His guidance played a vital role in shaping my GSoC journey.
+I also extend my gratitude to **Renan Matsuda**, **Thiago F Moraes** and the entire **InVesalius** community for being part of this journey and facilitating a smooth and supportive GSoC experience.
+Special thanks to **Google Summer of Code** for providing this incredible opportunity to contribute to open source and grow as a developer.
+
+
 
 
 
