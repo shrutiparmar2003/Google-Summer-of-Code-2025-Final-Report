@@ -2,7 +2,7 @@
 # Google Summer of Code 2025 - Final Report
 - Name : Shruti Parmar
 - Organisation : [InVesalius](https://invesalius.github.io/)
-- Project : Improvements in user response (Exporting 3D Surfaces)
+- Project : [Improvements in user response (Exporting 3D Surfaces)](https://summerofcode.withgoogle.com/programs/2025/projects/D5nIVoDd)
 - Mentors : Paulo Henrique Junqueira Amorim, Thiago F Moraes
 - Project Branch : [GSoC_2025_Shruti_Parmar](https://github.com/shrutiparmar2003/Improvements-in-user-response-loading-and-saving-files-/tree/feature/issue-991-progress-bar)
 - Pull Request : [#994](https://github.com/invesalius/invesalius3/pull/994) (Related issue- #991)
