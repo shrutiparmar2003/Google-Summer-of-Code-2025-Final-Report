@@ -93,6 +93,8 @@ Previously, the export logic for each format was scattered and hard to extend. T
 
 👉 [Week 1](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%201.md)
 
+👉 [Week 2](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%202.md)
+
 ---
 ## Challenges Faced
 
