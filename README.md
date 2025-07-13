@@ -50,20 +50,6 @@ These updates don’t track the actual write process, but by estimating progress
   
 ![image](https://github.com/user-attachments/assets/20ebf11b-3a9c-475b-bfe7-9307393e9a9f)
 
-
-  
----  
-
-### Feature 4: Support for New Export Formats: .rib and .iv
-I added export support for two previously unsupported formats:
-- .rib — widely used in photorealistic rendering pipelines (e.g., Pixar’s RenderMan).
-- .iv — used in Open Inventor scenes for visualization and CAD applications.
-
-Since these formats require specific structure and syntax, I wrote dedicated logic for formatting coordinates and headers correctly, ensuring compatibility with standard viewers.
-![image](https://github.com/user-attachments/assets/c8949e0c-fdf7-435e-a8be-709a921f25b0)
-
-
-
 ---  
 
 ### Feature 5: Better Feedback and Error Handling
