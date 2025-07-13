@@ -40,16 +40,6 @@ These updates don’t track the actual write process, but by estimating progress
 ![image](https://github.com/user-attachments/assets/64361cf4-8085-475b-9ae7-5856d32fe0ee)
 
 
-
----  
-
-### Feature 3: Real-Time Progress Tracking for .rib and .iv Formats
-- For custom formats like RenderMan Interface Bytestream (.rib) and Inventor (.iv) — which don’t use VTK writers — I implemented manual point-by-point writing. This allowed full control over progress tracking and user interruption.
-
-- Progress is updated every few points, and cancellation immediately halts the process, cleaning up resources and avoiding half-written files.
-  
-![image](https://github.com/user-attachments/assets/20ebf11b-3a9c-475b-bfe7-9307393e9a9f)
-
 ---  
 
 ### Feature 5: Better Feedback and Error Handling
