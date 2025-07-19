@@ -1,6 +1,6 @@
 ## Community Bonding Period 
 
-I was genuinely excited when I came across the project “Improvements in User Response (Loading and Saving Files)”. I love working on features that make the app feel responsive and alive. I still feel really lucky this project got selected by Google — working on something you enjoy doesn’t feel like a task. You get into it, and time just flies.
+I was genuinely excited when I came across the project “Improvements in User Response (Loading and Saving Files)”. I love working on features that make the app feel responsive and alive. 
 
 In community Bonding period, I focused on understanding the codebase and how the 3D surface export process is structured. Instead of just browsing through files, I took time to trace the logic step-by-step. While some parts were initially complex, things gradually started making sense with continued exploration.
 
