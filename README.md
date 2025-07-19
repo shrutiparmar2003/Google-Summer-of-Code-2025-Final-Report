@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/images/top%20img.png)
+![Alt Text](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/images/cover%20img.png)
 # Google Summer of Code 2025 - Final Report
 - Name : Shruti Parmar
 - Organisation : [InVesalius](https://invesalius.github.io/)
