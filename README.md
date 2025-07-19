@@ -18,11 +18,15 @@ This project aimed to enhance the 3D surface export workflow in InVesalius, an o
 Before this work, InVesalius lacked user feedback and control during the 3D surface export process. Large exports appeared unresponsive, and users had no way to monitor progress or cancel the operation. This project was motivated by the need to improve usability, transparency, and reliability during surface exports.
 
 ## Features Implemented
-### Feature 1: Cancellable Progress Dialog
-To improve user experience during file export — particularly for large models — I integrated wx.ProgressDialog into the export process. The dialog visually communicates the progress of each stage (coordinate transformation, writing, etc.) and provides users the ability to cancel the operation at any point.
-- Integrated a wx.ProgressDialog during surface export to show real-time status updates.
-- Provided users with the ability to cancel long-running exports, especially helpful when dealing with large or complex 3D models.
-- Ensured that cancellation does not leave behind partial or corrupted files by handling cleanup properly.
+### Feature 1:  Progress Dialog with Cancel Option
+One major improvement was introducing a cancellable progress dialog for both surface exports and full 3D scene exports.
+Previously, users had no feedback during large exports, which could take several seconds or even minutes. Now, a wx.ProgressDialog shows:
+- Preparing export...
+- Converting coordinates...
+- Exporting file: XX% complete
+- Export complete.
+
+The dialog also includes a Cancel button. If the user cancels, the operation stops gracefully, and temporary files are cleaned up to avoid corrupted outputs.
 
 <img src="https://github.com/user-attachments/assets/1d0deedb-58dc-4ead-ba5f-9eab0fae05ef" width="800" height="400"/>
 
@@ -31,8 +35,14 @@ To improve user experience during file export — particularly for large models 
 
 
 ---  
+### Feature 2 : Better User Feedback and Error Handling
+Success messages were added for completed exports and clear error messages for issues like:
+- Empty surface data.
+- Permission problems.
+- Unsupported file types.
+- If the GUI is not available (e.g., running in headless mode), the system falls back to simple console messages instead of crashing.
 
-### Feature 2: Simulated Progress for VTK-Based Writers
+### Feature 3: Simulated Progress for VTK-Based Writers
 VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter) do not provide native support for progress updates. To work around this, I implemented a simulated progress mechanism that estimates export progress based on the number of points and a configurable update interval.
 
 These updates don’t track the actual write process, but by estimating progress based on the number of points, they help give users a sense that the export is moving forward. This makes the application feel responsive, even during longer operations.
@@ -41,8 +51,12 @@ These updates don’t track the actual write process, but by estimating progress
 
 
 ---  
-
-### Feature 5: Better Feedback and Error Handling
+### Feature 4: Extended Format Support and Cleaner Workflow
+- Preserved existing polydata export functionality for STL, PLY, VTP, etc.
+- Extended progress feedback system to full 3D scene exports for formats like RIB, VRML, X3D, OBJ, and IV.
+- Ensured backward compatibility and integration with existing workflow.
+ ---  
+### Feature 4: Better Feedback and Error Handling
 The system's feedback mechanisms were enhanced to include:
 - Clear error messages for permission errors, empty surfaces, or unsupported formats.
 - Informative success messages after a successful export.
@@ -52,12 +66,12 @@ Temporary files are also cleaned up automatically, and memory is freed where pos
 
 ---  
 
-### Feature 6: Unified and Refactored Export Workflow
-Previously, the export logic for each format was scattered and hard to extend. The _export_surface() method was refactored to:
-
-- Group common tasks like polydata preparation and normal orientation.
-- Handle all formats (standard and custom) through a shared, clean control flow.
+## Feature 5: Refactored Export Workflow
+Previously, the export logic was scattered and difficult to extend.
+I refactored _export_surface() to:
+- Group common tasks (e.g., polydata preparation, normal orientation).
 - Centralize progress updates and cancellation checks.
+- Make the workflow cleaner and easier to maintain for future extensions.
 
 ## Export Workflow
 <p align="center">
