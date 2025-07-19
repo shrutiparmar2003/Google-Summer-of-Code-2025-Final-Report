@@ -78,6 +78,9 @@ I refactored _export_surface() to:
 
 👉 [Week 2](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%202.md)
 
+👉 [Week 3](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%203.md)
+
+
 ---
 ## Challenges Faced
 
