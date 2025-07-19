@@ -56,15 +56,10 @@ These updates don’t track the actual write process, but by estimating progress
 - Extended progress feedback system to full 3D scene exports for formats like RIB, VRML, X3D, OBJ, and IV.
 - Ensured backward compatibility and integration with existing workflow.
  ---  
-### Feature 4: Better Feedback and Error Handling
-The system's feedback mechanisms were enhanced to include:
-- Clear error messages for permission errors, empty surfaces, or unsupported formats.
-- Informative success messages after a successful export.
-- Silent fallback to print() in case the GUI is not available (e.g., in headless setups).
 
-Temporary files are also cleaned up automatically, and memory is freed where possible (via gc.collect()), avoiding clutter or leaks.
 
----  
+
+
 
 ## Feature 5: Refactored Export Workflow
 Previously, the export logic was scattered and difficult to extend.
