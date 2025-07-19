@@ -1,14 +1,12 @@
 ## Week 3
-### Manual Progress for .rib and .iv formats
-**.rib**: A file format that describes a 3D scene for Pixar’s RenderMan software. It’s mainly used to create very realistic images or animations. In medical imaging, it's sometimes used to make high-quality visual presentations of body parts.
+After optimizing the progress bar speed in Week 2, I focused on refining the user experience for surface exports. The key improvement this week was ensuring that the progress dialog closes automatically after the export finishes, instead of requiring manual dismissal.
+This feature was not straightforward because:
+- VTK writers do not provide real-time progress updates, so I implemented simulated progress logic that runs before and after the actual writer.Write() call.
 
-**.iv**: A file format that stores 3D objects and scenes, used in tools like Open Inventor. It helps doctors or researchers view and interact with 3D models of the body, like rotating or zooming into organs.
+I controlled the progress updates using a loop, incrementing the percentage in steps (e.g., 10%, 20%, ... up to 90%), and then set it to 100% after the file was successfully written.
+Once the export reached 100%, the dialog was closed programmatically using progress.Destroy(), ensuring no dangling UI elements.
 
-
-
-Although rib and iv formats were listed in the codebase, there was no existing logic to handle these formats. Therefore, I implemented a custom logic for both.
-
-- Since these formats don't have native support in VTK, these required writing point data and headers manually.
-- This allowed full control over the export process and user could interrupt it any time.
-- The progress bars were added for these file formats as well but the implementation was unlike VTK-based writers where the progress was being simulated.
-- Here the progress advanced in real time as each point was manually written 
+I also handled edge cases:
+- If the user cancels during the process, the dialog closes immediately, and partial files are cleaned up.
+- Verified that the auto-close did not break cancel functionality or cause UI freezes by using wx.Yield() for responsiveness.
+- This improvement significantly enhanced the overall user experience, making the export workflow smoother and more intuitive.
