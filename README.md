@@ -41,7 +41,7 @@ Success messages were added for completed exports and clear error messages for i
 - Permission problems.
 - Unsupported file types.
 - If the GUI is not available (e.g., running in headless mode), the system falls back to simple console messages instead of crashing.
-
+---
 ### Feature 3: Simulated Progress for VTK-Based Writers
 VTK’s built-in writers (e.g., vtkSTLWriter, vtkPLYWriter, vtkXMLPolyDataWriter) do not provide native support for progress updates. To work around this, I implemented a simulated progress mechanism that estimates export progress based on the number of points and a configurable update interval.
 
@@ -69,9 +69,7 @@ I refactored _export_surface() to:
 - Make the workflow cleaner and easier to maintain for future extensions.
 
 ## Export Workflow
-<p align="center">
-  <img src="https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/images/Export%20Workflow.png?raw=true" width="500" />
-</p>
+
 
 ## Weekly Reports
 👉 [Community Bonding Period](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Community%20Bonding%20Period.md) 
