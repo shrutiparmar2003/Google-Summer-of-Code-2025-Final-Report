@@ -84,14 +84,14 @@ I refactored _export_surface() to:
 
 
 ---
-### Project Status
+## Project Status
 
 The project is functionally 100% complete. All planned features have been implemented, tested, and submitted via Pull Request.
 
 The final part of the code is pending review and merge by the mentor. 
 
-🔗 Pull Request: [#994 -Added progress bar for 3D surface exports ](https://github.com/invesalius/invesalius/pull/994)  
-🔗 Related Issue: [#991 - Add progress bar to export 3D surface](https://github.com/invesalius/invesalius/issues/991)
+Pull Request: [#994 -Added progress bar for 3D surface exports ](https://github.com/invesalius/invesalius/pull/994)  
+Related Issue: [#991 - Add progress bar to export 3D surface](https://github.com/invesalius/invesalius/issues/991)
 ---
 ## Challenges Faced
 
