@@ -83,6 +83,7 @@ I refactored _export_surface() to:
 
 👉 [Week 5](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Week%205.md)
 
+👉 [Week 6- Week 8](https://github.com/shrutiparmar2003/Google-Summer-of-Code-2025-Final-Report/blob/main/Weekly%20Reports/Weeks%206-8.md)
 
 ---
 ## Project Status
