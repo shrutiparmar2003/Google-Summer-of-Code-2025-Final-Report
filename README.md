@@ -68,7 +68,6 @@ I refactored _export_surface() to:
 - Centralize progress updates and cancellation checks.
 - Make the workflow cleaner and easier to maintain for future extensions.
 
-## Export Workflow
 
 
 ## Weekly Reports
