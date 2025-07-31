@@ -93,7 +93,6 @@ All planned features have been implemented, tested, reviewed, and accepted.
 
 - **Pull Request (Merged):** [#994 – Added progress bar for 3D surface exports](https://github.com/invesalius/invesalius3/pull/994)  
 - **Related Issue:** [#991 – Add progress bar to export 3D surface](https://github.com/invesalius/invesalius3/issues/991)
-
 This contribution is now part of the official InVesalius3 codebase.
 ---
 ## Challenges Faced
